@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DevCon Happening</title>
+        <% include partial/head %>
+    </head>
+
+    <body>
+      <header>
+        <% include partial/nav %>
+      </header>
+
+      <main>
+
+        <div class="container wrapper">
+
+          <div class="row">
+            <div class="col s12">
+              <ul class="tabs">
+                <li class="tab col s1"><a href="#all">ALL</a></li>
+                <li class="tab col s1"><a href="#meetup">MEETUP</a></li>
+                <li class="tab col s1"><a href="#hackathon">HACKATHON</a></li>
+              </ul>
+              <div id="all" class="col s12 events"><ul></ul></div>
+              <div id="meetup" class="col s12 events"><ul></ul></div>
+              <div id="hackathon" class="col s12 events"><ul></ul></div>
+              <script id="templateHappening" type="x-handlebars-template">
+              {{#each this}}
+                <li>
+                  <a href="meetup?{{id}}">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="{{image}}" />
+                      </div>
+                      <div class="card-content">
+                        <div class="meetup-title">{{ title }}</div>
+                        <div class="meetup-date">{{ start_date }}</div>
+                        <div class="meetup-time">{{ start_time }}</div>
+                        <div class="meetup-number">{{ current }}/{{ max }}</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              {{/each}}
+              </script>
+            </div>
+          </div>
+
+        </div>
+
+      </main>
+
+      <% include partial/script %>
+      <script>
+
+      </script>
+    </body>
+</html>

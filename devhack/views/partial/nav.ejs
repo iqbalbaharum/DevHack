@@ -1,0 +1,14 @@
+<nav class="black">
+  <div class="nav-wrapper container">
+    <a href="/" class="brand-logo">Devcon</a>
+    <ul class="right hide-on-med-and-down">
+      <!-- Dropdown Trigger -->
+      <% if(login) { %>
+        <li><a href="/logout">Log Out</a></li>
+      <% } else { %>
+        <li><a href="/register">Sign Up</a></li>
+        <li><a href="/login">Log In</a></li>
+      <% } %>
+    </ul>
+  </div>
+</nav>

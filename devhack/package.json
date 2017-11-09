@@ -1,0 +1,36 @@
+{
+  "name": "devhack",
+  "version": "1.0.0",
+  "description": "Hackathon submission and voting system",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iqbalbaharum/DevHack.git"
+  },
+  "author": "iqbalbaharum",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iqbalbaharum/DevHack/issues"
+  },
+  "homepage": "https://github.com/iqbalbaharum/DevHack#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-flash": "git://github.com/RGBboy/express-flash.git",
+    "express-session": "^1.15.6",
+    "jsonwebtoken": "^8.1.0",
+    "mongoose": "^4.13.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
